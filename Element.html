@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	"use strict";
+	
+	class Element {
+		
+		constructor(id) {
+			this.id = id;
+			this.kind = "Element";
+		}
+	}
+
+
+	class SuperElement extends Element {
+		
+		constructor(id) {
+			super(id);
+			this.kind = "SuperElement";
+		}
+	}
+	
+	
+	$(document).ready( function() {
+		
+		var bingo = new SuperElement("watershed");
+		
+		$("#maxwell").text(bingo.id + " " + bingo.kind);
+	})
+
+
+</script>
+</head>
+<body>
+	<div id="maxwell">
+		Waterfall
+	</div>
+</body>
