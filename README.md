@@ -4,6 +4,7 @@
 
 ## Jargon
 
+
 * __Collections__ are manifest as a series of
 * __Records__ composed of multiple
 * __Fields__ containing individual pieces of data.
